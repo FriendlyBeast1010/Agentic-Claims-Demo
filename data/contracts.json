@@ -1,0 +1,36 @@
+{
+  "bluehill_ppo_ax7847_44848": {
+    "plan": {
+      "payer": "BlueHill Health Plan",
+      "brand": "BlueHill Advantage",
+      "product_type": "PPO",
+      "plan_id": "AX7847-44848",
+      "market": "Commercial",
+      "region": "Midwest",
+      "network_tier": "Tier 1",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-12-31"
+    },
+    "provider_agreement": {
+      "provider_contract_id": "BH-PA-2025-001",
+      "amendment_version": "v2025.1",
+      "rate_method": "EpisodeBundle",
+      "applicable_plans": ["AX7847-44848"],
+      "npi": ["1234567890"],
+      "tin": "12-3456789"
+    },
+    "episode": {
+      "program_name": "Orthopedic Episodes of Care",
+      "episode_code": "EOC-KNEE-TKA",
+      "episode_version": "2025.1",
+      "bundle_type": "Retrospective",
+      "window": {"pre_days": 30, "post_days": 90},
+      "trigger_codes": {"cpt": ["27447"]},
+      "covered_cpts": ["97110", "97112"],
+      "covered_services": ["physical therapy", "post-op rehab"],
+      "exclusions": {"dx": ["S82.*"], "pos": ["21"]},
+      "carve_outs": {"dme": ["E0114"]},
+      "reimbursement": {"case_rate": 21500, "stop_loss_threshold": 45000}
+    }
+  }
+}

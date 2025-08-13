@@ -1,0 +1,36 @@
+{
+  "pt_in_bundle": {
+    "claim_id": "C-1001",
+    "member_id": "M-123",
+    "provider_id": "P-555",
+    "dos": "2025-08-01",
+    "diagnosis": [
+      "M17.11"
+    ],
+    "lines": [
+      {
+        "cpt": "97110",
+        "units": 2
+      },
+      {
+        "cpt": "97112",
+        "units": 1
+      }
+    ]
+  },
+  "flu_not_in_bundle": {
+    "claim_id": "C-2001",
+    "member_id": "M-999",
+    "provider_id": "P-777",
+    "dos": "2025-08-01",
+    "diagnosis": [
+      "Z23"
+    ],
+    "lines": [
+      {
+        "cpt": "90686",
+        "units": 1
+      }
+    ]
+  }
+}

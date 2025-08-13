@@ -1,0 +1,11 @@
+{
+  "claim_id": "C-1001",
+  "member_id": "M-123",
+  "provider_id": "P-555",
+  "dos": "2025-08-01",
+  "diagnosis": ["M17.11"],
+  "lines": [
+    {"cpt": "97110", "units": 2},
+    {"cpt": "97112", "units": 1}
+  ]
+}
